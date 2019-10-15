@@ -19,12 +19,12 @@ module ZXingCppSpec
 end
 
 Gem::Specification.new do |s|
-  s.name = 'zxing_cpp'
+  s.name = 'zxing_cpp_no_cmake'
   s.version = ZXing::VERSION
 
-  s.authors = ['Benjamin Dobell']
-  s.email = ['benjamin.dobell@glassechidna.com.au']
-  s.description = 'A barcode and QR code library that works with regular Ruby (not just JRuby). This gem comes bundled with ZXing C++ (zxing-cpp) and interfaces with it using FFI. As such this gem works with most major Ruby distributions.'
+  s.authors = ['Benjamin Dobell', 'Nigel Baillie']
+  s.email = ['benjamin.dobell@glassechidna.com.au', 'nbaillie@degica.com']
+  s.description = 'A barcode and QR code library that works with regular Ruby (not just JRuby). This gem comes bundled with ZXing C++ (zxing-cpp) and interfaces with it using FFI. As such this gem works with most major Ruby distributions. Modified to not require CMake as a build dependency.'
   s.licenses = ['MIT', 'Apache-2.0']
 
   s.homepage = 'https://github.com/glassechidna/zxing_cpp.rb'
